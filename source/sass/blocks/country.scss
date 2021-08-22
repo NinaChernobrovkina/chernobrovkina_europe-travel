@@ -1,0 +1,115 @@
+.country {
+  display: none;
+
+  &--active {
+    display: grid;
+    grid-template-columns: 370px 1fr;
+    column-gap: 100px;
+  }
+}
+
+.country__title {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1px;
+  position: relative;
+
+  &::after {
+    @include underline(175px, 3px, 20px);
+  }
+}
+
+.country__text {
+  margin-top: 53px;
+  font-size: 16px;
+  line-height: 28px;
+  color: fade-out($basic-font, 0.3);
+  letter-spacing: -0.466667px;
+}
+
+.country__button {
+  margin-top: 50px;
+  box-sizing: border-box;
+  width: 250px;
+  height: 75px;
+  border: none;
+  background-color: $pink;
+  color: $white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $orange;
+  }
+}
+
+.country__review-wrapper {
+  height: 596px;
+  background-repeat: no-repeat;
+
+  &--greece {
+    background-image: url("../../img/greece.jpg");
+  }
+
+  &--albania {
+    background-image: url("../../img/albania.jpg");
+  }
+
+  &--macedonia {
+    background-image: url("../../img/macedonia.jpg");
+  }
+
+  &--montenegro {
+    background-image: url("../../img/montenegro.jpg");
+  }
+
+  &--croatia {
+    background-image: url("../../img/croatia.jpg");
+  }
+}
+
+.country__review {
+  margin-top: 114px;
+  margin-left: auto;
+  box-sizing: border-box;
+  width: 382px;
+  background-color: $white;
+  padding: 30px;
+}
+
+.country__review-title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.691667px;
+  position: relative;
+
+  &::after {
+    @include underline(68px, 1px, 11px);
+  }
+}
+
+.country__review-text {
+  margin-top: 32px;
+
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.408333px;
+}
+
+.country__review-author {
+  margin-top: 35px;
+  display: flex;
+}
+
+.country__review-name {
+  margin-top: 9px;
+  margin-left: 16px;
+}

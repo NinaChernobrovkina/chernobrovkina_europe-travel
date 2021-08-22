@@ -1,0 +1,15 @@
+@mixin center {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@mixin underline($width, $height, $bottom) {
+  content: "";
+  position: absolute;
+  width: $width;
+  height: $height;
+  bottom: -$bottom - $height;
+  left: 0;
+  background-color: $pink;
+}

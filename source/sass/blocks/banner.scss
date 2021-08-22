@@ -1,0 +1,55 @@
+.banner {
+  background-color: $banner-bg;
+  background-image: url("../../img/banner.jpg");
+  height: 860px;
+}
+
+.banner__wrapper {
+  @include center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.banner__info {
+  grid-column: 2 / 3;
+  padding: 185px 0 0 115px;
+  color: $white;
+}
+
+.banner__title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1px;
+  width: 412px;
+}
+
+.banner__text {
+  margin-top: 30px;
+  line-height: 170%;
+  width: 376px;
+}
+
+.banner__link {
+  margin-top: 39px;
+  display: block;
+  box-sizing: border-box;
+  width: 340px;
+  height: 75px;
+  background-color: $pink;
+  color: $white;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 30px 40px;
+  background-image: url("../../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 286px 31px;
+
+  &:hover {
+    background-color: $orange;
+  }
+}

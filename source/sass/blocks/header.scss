@@ -1,0 +1,65 @@
+.header__wrapper {
+  @include center;
+  display: grid;
+  grid-template-columns: min-content 1fr max-content;
+  box-sizing: border-box;
+  height: 100px;
+  padding: 32px 0 36px;
+}
+
+.header__logo {
+  padding: 4px 0 0;
+}
+
+.header__toggle {
+  display: none;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 66px;
+}
+
+.header__menu-item {
+  margin-right: 40px;
+  margin-top: 7px;
+}
+
+.header__menu-link {
+  color: $dark-font;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+
+  &:hover {
+    color: $pink;
+  }
+}
+
+.header__phone {
+  display: block;
+  position: relative;
+  color: $dark-font;
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 32px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../img/icon-phone.svg");
+    top: 3px;
+    left: -36px;
+  }
+
+  &:hover {
+    color: $pink;
+
+    &::before {
+      background-image: url("../../img/phone-pink.svg");
+    }
+  }
+}
