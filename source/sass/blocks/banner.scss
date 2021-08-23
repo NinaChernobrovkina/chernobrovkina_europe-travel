@@ -1,7 +1,12 @@
 .banner {
   background-color: $banner-bg;
-  background-image: url("../../img/banner.jpg");
   height: 860px;
+  background-image: url("../../img/banner.jpg");
+  background-position-x: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/banner@2x.jpg");
+  }
 }
 
 .banner__wrapper {
@@ -51,5 +56,107 @@
 
   &:hover {
     background-color: $orange;
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .banner {
+    height: 344px;
+    background-image: url("../../img/banner-tablet.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/banner-tablet@2x.jpg");
+    }
+  }
+
+  .banner__wrapper {
+    display: block;
+  }
+
+  .banner__info {
+    width: 398px;
+    padding: 60px 0 0;
+    margin: 0 auto;
+  }
+
+  .banner__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 150%;
+    letter-spacing: 0;
+  }
+
+  .banner__text {
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 170%;
+  }
+
+  .banner__link {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 50px;
+
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 19px 40px;
+    background-position: 196px 18px;
+
+    &:hover {
+      background-color: $orange;
+    }
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .banner {
+    height: auto;
+    background-image: none;
+    background-color: transparent;
+
+    @media (min-resolution: 2dppx) {
+      background-image: none;
+    }
+  }
+
+  .banner__wrapper {
+    padding: 0;
+  }
+
+  .banner__info {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner__title {
+    box-sizing: border-box;
+    height: 235px;
+    padding: 81px 16px 0;
+    font-size: 24px;
+    background-image: url("../../img/banner-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/banner-mobile@2x.jpg");
+    }
+  }
+
+  .banner__text {
+    margin-top: 20px;
+    width: auto;
+    @include center;
+  }
+
+  .banner__link {
+    margin-top: 20px;
+    @include center;
+    width: 288px;
+    background-position: 234px 18px;
   }
 }
