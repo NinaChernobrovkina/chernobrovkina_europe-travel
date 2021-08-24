@@ -7,6 +7,10 @@
 
 .page__places {
   margin-top: 200px;
+
+  @media (max-width: $max-tablet-width) {
+    margin-top: 80px;
+  }
 }
 
 .page__bg {
@@ -22,4 +26,16 @@
 
 .page__form {
   margin-top: 140px;
+}
+
+.page__footer {
+  margin-top: 160px;
+
+  @media (max-width: $max-tablet-width) {
+    margin-top: 80px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin-top: 60px;
+  }
 }

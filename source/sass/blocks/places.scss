@@ -64,7 +64,7 @@
   padding: 16px 0 0;
   text-align: center;
   left: 50%;
-  margin-left: -112px;
+  margin-left: -107px;
 }
 
 .places__more-wrapper {
@@ -87,7 +87,6 @@
   height: 77px;
   border: 1px solid fade-out($white, 0.3);
   color: $white;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -95,4 +94,81 @@
   text-transform: uppercase;
   padding: 30px 0;
   text-align: center;
+}
+
+@media (max-width: $max-tablet-width) {
+  .places__title {
+    font-size: 30px;
+    line-height: 150%;
+    letter-spacing: 0;
+    width: auto;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .places__text {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 343px;
+    text-align: center;
+  }
+
+  .places__list {
+    margin-top: 40px;
+    width: 616px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .places__item {
+    margin-right: 40px;
+    margin-bottom: 40px;
+    max-width: 350px;
+    position: relative;
+    width: 288px;
+    height: 425px;
+
+    &:last-child {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:hover .places__more-wrapper {
+      display: none;
+    }
+  }
+
+  .places__item-img {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .places__title {
+    font-size: 24px;
+    width: auto;
+    text-align: center;
+    position: relative;
+  }
+
+  .places__list {
+    margin-top: 20px;
+    width: 288px;
+  }
+
+  .places__item {
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
 }

@@ -74,6 +74,10 @@
     height: auto;
     padding-top: 0;
     padding-bottom: 0;
+
+    &--nojs {
+      display: block;
+    }
   }
 
   .header__logo {
@@ -111,6 +115,10 @@
         display: block;
         position: relative;
         left: 21px;
+
+        @media (max-width: $max-mobile-width) {
+          left: -16px;
+        }
       }
     }
 
