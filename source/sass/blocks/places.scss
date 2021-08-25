@@ -96,6 +96,11 @@
   text-align: center;
 }
 
+.places__link {
+  display: block;
+  color: $basic-font;
+}
+
 @media (max-width: $max-tablet-width) {
   .places__title {
     font-size: 30px;
@@ -150,7 +155,7 @@
   .places__item-img {
     display: block;
     object-fit: cover;
-    height: 100%;
+    height: 425px;
   }
 }
 

@@ -18,10 +18,23 @@
   background-image: url("../../img/bg-map.svg");
   background-repeat: no-repeat;
   background-position: center 119px;
+
+  @media (max-width: $max-tablet-width) {
+    background-image: none;
+    margin-top: 55px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin-top: 5px;
+  }
 }
 
 .page__prices {
   margin-top: 232px;
+
+  @media (max-width: $max-tablet-width) {
+    margin-top: 111px;
+  }
 }
 
 .page__form {

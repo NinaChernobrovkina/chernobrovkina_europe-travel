@@ -35,3 +35,31 @@
 .tabs__content {
   margin-top: 65px;
 }
+
+@media (max-width: $max-tablet-width) {
+  .tabs__nav {
+    overflow-x: scroll;
+    margin-right: -21px;
+  }
+
+  .tabs__nav-item {
+    &:hover {
+      color: fade-out($basic-font, 0.7);
+    }
+  }
+
+  .tabs__content {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .tabs__nav {
+    overflow-x: scroll;
+    margin-right: -16px;
+  }
+
+  .tabs__content {
+    margin-top: 24px;
+  }
+}

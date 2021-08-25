@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Путешествие по Европе</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class="page">
 <header class="header">
@@ -54,39 +57,49 @@
       <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
       <ul class="places__list">
         <li class="places__item">
-          <img class="places__item-img" src="img/place-greece.jpg" width="350" height="430" alt="Греция">
-          <p class="places__name">Греция</p>
-          <div class="places__more-wrapper">
-            <div class="places__more">Смотреть подробнее</div>
-          </div>
+          <a href="#tabs" class="places__link">
+            <img class="places__item-img" src="img/place-greece.jpg" width="350" height="430" alt="Греция">
+            <p class="places__name">Греция</p>
+            <div class="places__more-wrapper">
+              <div class="places__more">Смотреть подробнее</div>
+            </div>
+          </a>
         </li>
         <li class="places__item">
-          <img class="places__item-img" src="img/place-albania.jpg" width="350" height="430" alt="Албания">
-          <p class="places__name">Албания</p>
-          <div class="places__more-wrapper">
-            <div class="places__more">Смотреть подробнее</div>
-          </div>
+          <a href="#tabs" class="places__link">
+            <img class="places__item-img" src="img/place-albania.jpg" width="350" height="430" alt="Албания">
+            <p class="places__name">Албания</p>
+            <div class="places__more-wrapper">
+              <div class="places__more">Смотреть подробнее</div>
+            </div>
+          </a>
         </li>
         <li class="places__item">
-          <img class="places__item-img" src="img/place-macedonia.jpg" width="350" height="430" alt="Македония">
-          <p class="places__name">Македония</p>
-          <div class="places__more-wrapper">
-            <div class="places__more">Смотреть подробнее</div>
-          </div>
+          <a href="#tabs" class="places__link">
+            <img class="places__item-img" src="img/place-macedonia.jpg" width="350" height="430" alt="Македония">
+            <p class="places__name">Македония</p>
+            <div class="places__more-wrapper">
+              <div class="places__more">Смотреть подробнее</div>
+            </div>
+          </a>
         </li>
         <li class="places__item">
-          <img class="places__item-img" src="img/place-montenegro.jpg" width="350" height="430" alt="Черногория">
-          <p class="places__name">Черногория</p>
-          <div class="places__more-wrapper">
-            <div class="places__more">Смотреть подробнее</div>
-          </div>
+          <a href="#tabs" class="places__link">
+            <img class="places__item-img" src="img/place-montenegro.jpg" width="350" height="430" alt="Черногория">
+            <p class="places__name">Черногория</p>
+            <div class="places__more-wrapper">
+              <div class="places__more">Смотреть подробнее</div>
+            </div>
+          </a>
         </li>
         <li class="places__item">
-          <img class="places__item-img" src="img/place-croatia.jpg" width="350" height="430" alt="Хорватия">
-          <p class="places__name">Хорватия</p>
-          <div class="places__more-wrapper">
-            <div class="places__more">Смотреть подробнее</div>
-          </div>
+          <a href="#tabs" class="places__link">
+            <img class="places__item-img" src="img/place-croatia.jpg" width="350" height="430" alt="Хорватия">
+            <p class="places__name">Хорватия</p>
+            <div class="places__more-wrapper">
+              <div class="places__more">Смотреть подробнее</div>
+            </div>
+          </a>
         </li>
       </ul>
     </div>
@@ -249,56 +262,56 @@
           <a class="prices__phone-link" href="tel:+749978468446">+7 (499) -784-684-46</a>
         </div>
         <ul class="prices__list">
-          <li class="prices__item">
-            <div class="prices__item-info">
-              <div class="prices__item-header">
-                <p class="prices__item-title">Комплексный</p>
-                <p class="prices__item-price">$1999</p>
+          <li class="tariff prices__list-item">
+            <div class="tariff__info">
+              <div class="tariff__header">
+                <p class="tariff__title">Комплексный</p>
+                <p class="tariff__price">$1999</p>
               </div>
-              <p class="prices__item-text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-              <ul class="prices__item-features">
-                <li class="prices__item-feature">
+              <p class="tariff__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <ul class="tariff__features">
+                <li class="tariff__feature">
                   Разработанный маршрут с гидом группы
                 </li>
-                <li class="prices__item-feature">
+                <li class="tariff__feature">
                   Перелет, трансфер и проживание в отелях
                 </li>
-                <li class="prices__item-feature">
+                <li class="tariff__feature">
                   Завтраки, ужины в отелях и ланчи на природе
                 </li>
-                <li class="prices__item-feature">
+                <li class="tariff__feature">
                   Экскурсии по удивительно красивым местам Европы
                 </li>
               </ul>
             </div>
-            <button class="prices__item-button" type="button">Купить тур сейчас</button>
+            <button class="tariff__button" type="button">Купить тур сейчас</button>
           </li>
-          <li class="prices__item">
-            <div class="prices__item-info">
-              <div class="prices__item-header">
-                <p class="prices__item-title">Экономный</p>
-                <p class="prices__item-price">$1399</p>
+          <li class="tariff">
+            <div class="tariff__info">
+              <div class="tariff__header">
+                <p class="tariff__title">Экономный</p>
+                <p class="tariff__price">$1399</p>
               </div>
-              <p class="prices__item-text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-              <ul class="prices__item-features">
-                <li class="prices__item-feature">
+              <p class="tariff__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <ul class="tariff__features">
+                <li class="tariff__feature">
                   Разработанный маршрут с гидом группы
                 </li>
-                <li class="prices__item-feature">
+                <li class="tariff__feature">
                   Перелет и трансфер
                 </li>
-                <li class="prices__item-feature">
+                <li class="tariff__feature">
                   Проживание в хостелах при отелях
                 </li>
-                <li class="prices__item-feature">
+                <li class="tariff__feature">
                   Только завтраки в отелях
                 </li>
-                <li class="prices__item-feature">
+                <li class="tariff__feature">
                   Экскурсии по удивительно красивым местам Европы
                 </li>
               </ul>
             </div>
-            <button class="prices__item-button" type="button">Купить тур сейчас</button>
+            <button class="tariff__button" type="button">Купить тур сейчас</button>
           </li>
         </ul>
       </div>
@@ -369,5 +382,27 @@
     </section>
   </div>
 </footer>
+<div class="modal" id="success">
+  <div class="modal__box">
+    <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <p class="modal__text">Форма успешно отправлена, спасибо! :)</p>
+  </div>
+</div>
+<div class="modal" id="tour">
+  <div class="modal__box modal__box--img">
+    <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <form class="modal__form">
+      <p class="modal__title">Купить тур</p>
+      <label class="modal__label modal__label--phone modal__label--required">
+        <input type="text" class="modal__input" name="phone" placeholder="Введите 10 цифр номера">
+      </label>
+      <label class="modal__label">
+        <input type="text" class="modal__input" name="email" placeholder="E-mail">
+      </label>
+      <button class="modal__submit" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
+<script type="module" src="js/main.min.js"></script>
 </body>
 </html>
